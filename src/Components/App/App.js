@@ -3,6 +3,7 @@ import React from 'react';
 import logo from '../../logo.svg';
 import './App.css';
 import Post from '../Post/Post'
+import { Navbar } from '../NavBar/navbar';
 
 function App() {
   const posts = [
@@ -46,6 +47,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Navbar />
         {
           posts.map((post, index) => {
             return <Post key={index} id={post.id} title={post.title} author={post.author} creationDate={post.creationDate} description={post.description}/>
