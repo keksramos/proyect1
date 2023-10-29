@@ -19,7 +19,7 @@ function App() {
       description:"With a recent effort to reduce customer (engineers, not end users) pain on our container platform Titus, I started investigating “orphaned” pods. There are pods that never got to finish and had to be garbage collected with no real satisfactory final status. Our Service job (think ReplicatSet) owners don’t care too much, but our Batch users care a lot. Without a real return code, how can they know if it is safe to retry or not?",
     },
     {
-      title:"A personal, non-partisan perspective on the Israel-Hamas war. To understand this war, we must understand the thousand-year history that led us here", 
+     title:"A personal, non-partisan perspective on the Israel-Hamas war. To understand this war, we must understand the thousand-year history that led us here", 
       author:"Isaac Saul", 
       creationDate:"10-12-2023", 
       description:"People ask me all the time if I am “pro-Israel” because I am a Jew who has lived in Israel, and my answer is that being “pro-Israel” or being “pro-Palestine” or being a “Zionist” does not properly capture the nuance of thought most people do or should have about this issue. It certainly doesn’t capture mine.",
@@ -46,10 +46,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         {
           posts.map((post, index) => {
-            return <Post key={index} title={post.title} author={post.author} creationDate={post.creationDate} description={post.description}/>
+            return <Post key={index} id={post.id} title={post.title} author={post.author} creationDate={post.creationDate} description={post.description}/>
           })
         }
       </header>
