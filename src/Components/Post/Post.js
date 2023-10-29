@@ -5,9 +5,9 @@ function Post(props){
     const {title, author, creationDate, description} = props;
 
     return <div className="postContainer">
-        <p>{title}</p>
-        <p>{author}</p>
-        <p>{creationDate}</p>
+        <p className="Author">{author}</p>
+        <p><b>{title}</b></p>
+        <p className="Date">{creationDate}</p>
         <p>{description}</p>
     </div>;
 }
