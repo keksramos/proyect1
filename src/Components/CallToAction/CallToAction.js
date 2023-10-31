@@ -5,7 +5,7 @@ export const CallToAction = () => {
     return (
         <div className="ctaContainer">
             <div className="textContainerCTA">
-                <h1>Stay curious.</h1>
+                <h1 className="CTA-Title">Stay curious.</h1>
                 <p className="CTALeyend">Discover stories, thinking, and expertise from writers on any topic.</p>
 
                 <button className="CTA__Button">Start reading</button>

@@ -1,3 +1,37 @@
-h1{
-    color:black;
+.discoverContainer{
+    border-bottom: 1px solid rgb(242,242,242);
+    margin-bottom: 25px;
+}
+
+.DiscoverTitle{
+    font-weight: 600;
+}
+
+.discoverButtons{
+    width: 20%;
+    height: 30px;
+    background-color: rgb(242,242,242);
+    color: black;
+    border: 0px;
+    border-radius: 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.moreTopicsDiscover{
+    font-size: 14px;
+    color: rgb(80,144,60);
+    padding-bottom: 30px;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.footer{
+    color:grey;
+    font-size: 14px;
+    list-style: none;
 }
