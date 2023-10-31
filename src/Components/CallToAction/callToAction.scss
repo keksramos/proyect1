@@ -1,13 +1,14 @@
 .ctaContainer{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 500px;
     background-color: rgb(245, 187, 79);
     color : black;
-    
+    top:0;
+    // margin-top: 0px;
+    // padding-top: 0px;
 }
 
 .textContainerCTA{

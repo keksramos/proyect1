@@ -1,4 +1,5 @@
 import React from "react";
+import {FaBookmark} from "react-icons/fa"
 import ('./post.scss')
 
 function Post(props){
@@ -14,6 +15,7 @@ function Post(props){
             <p></p>
             <p className="ReadTime">·</p>
             <p className="ReadTime">{readTime}</p>
+            <button className="bookmarkButton"><FaBookmark/></button>
             </div>
         </section>
         <picture>
