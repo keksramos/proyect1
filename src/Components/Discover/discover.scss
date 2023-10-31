@@ -27,11 +27,16 @@
 .footerContainer{
     display: flex;
     flex-direction: row;
-
+    overflow: hidden;
 }
 
 .footer{
     color:grey;
     font-size: 14px;
     list-style: none;
+    float: left;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
 }
+
