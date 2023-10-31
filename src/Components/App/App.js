@@ -3,7 +3,7 @@ import React from 'react';
 import logo from '../../logo.svg';
 import './App.css';
 import Post from '../Post/Post'
-import { Navbar } from '../NavBar/navbar';
+import  {Navbar} from '../NavBar/navbar';
 import { CallToAction } from '../CallToAction/CallToAction';
 import TrendingPosts from '../TrendingPosts/TrendingPosts'
 
