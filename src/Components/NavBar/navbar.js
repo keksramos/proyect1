@@ -1,6 +1,8 @@
 import React, {useRef} from "react";
 import "./navbar.scss"
 
+// import logo from "./logo.svg"
+
 
 export const Navbar = () => {
     const navref = useRef()
@@ -11,13 +13,15 @@ export const Navbar = () => {
 
     return (
         <header>
-            <h3>Logo</h3>
             <nav ref={navref}>
-                <a href="/#">Our story</a>
-                <a href="/#">Membership</a>
-                <a href="/#">Write</a>
-                <a href="/#">Sign In</a>
-                <button className="navButton">Get started</button>
+                <h2>Logo</h2>
+                <div className="navLinks">
+                    <a href="/#">Our story</a>
+                    <a href="/#">Membership</a>
+                    <a href="/#">Write</a>
+                    <a href="/#">Sign In</a>
+                    <button className="navButton">Get started</button>
+                </div>
             </nav>
         </header>
     )
