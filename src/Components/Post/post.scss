@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: row;
     width: 500px;
-    height: 130px;
+    height: 150px;
     margin: 15px;
+    padding: 5px;
+    margin-top: 25px;
 }
 
 .textContianer{
@@ -11,21 +13,39 @@
     // flex-direction: column;
     border: 1px solid black;
     background-color: black;
+    cursor: pointer;
 }
 .picture{
-    height: auto;
-    width: 180px;
+    height: 150px;
+    width: 190px;
     object-fit: cover;
     margin-left: 10px;
     align-items: end;
-
+    cursor: pointer;
 }
+
+.GreyLetters{
+    display: flex;
+    flex-direction: row;
+}
+
 .Date{
     color:grey;
     font-size: 12px;
 }
 
+.ReadTime{
+    color: grey;
+    font-size: 12px;
+}
+
+.readTime{
+    color: grey;
+    font-size: 12px;
+}
+
 .Author{
+    font-size: 13px;
     font-weight: 500;
 }
 
