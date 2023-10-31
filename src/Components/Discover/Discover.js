@@ -7,7 +7,7 @@ export const Discover = () => {
         <section >
             <div className="discoverContainer">
             <p className="DiscoverTitle">Discover more of what matters to you</p>
-            <div>
+            <div className="discoverButtonsContainer">
                 <button className="discoverButtons">Programming</button>
                 <button className="discoverButtons">Data Science</button>
                 <button className="discoverButtons">Technology</button>
