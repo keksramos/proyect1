@@ -127,6 +127,7 @@ function App() {
           </div>
         </section>
         <section className="Content-Body">
+        <div>
         {posts.map((post, index) => {
           return (
             <Post
@@ -141,7 +142,10 @@ function App() {
             />
           );
         })}
+        </div>
+        <div>
         <Discover />
+        </div>
         </section>
       </header>
     </div>
