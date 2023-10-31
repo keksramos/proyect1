@@ -9,9 +9,9 @@
 
 
 .TrendingTitleContainer{
-  /* display: flex; */
-  justify-content: flex-start;
-  width: 1000px;
+  /* display: flex;
+  flex-direction: column; */
+  width: 100%;
 }
 
 .TrendingTitle{  
@@ -23,15 +23,10 @@
 
 .TrendingPostsContianer{
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: row;
   border-bottom: 1px solid rgb(242,242,242);
 }
 
-.bodyContainer{
-  display: flex;
-  flex-direction: row;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
