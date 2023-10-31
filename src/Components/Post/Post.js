@@ -12,7 +12,6 @@ function Post(props){
             <p className="Description">{description}</p>
             <div className="GreyLetters">
                 <p className="Date">{creationDate}</p>
-                <p></p>
                 <p className="ReadTime">·</p>
                 <p className="ReadTime">{readTime}</p>
                 <button className="bookmarkButton"><FaRegBookmark/></button>
