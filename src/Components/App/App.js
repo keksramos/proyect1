@@ -134,6 +134,7 @@ function App() {
               creationDate={post.creationDate}
               description={post.description}
               readTime={post.readTime}
+              coverImage={post.coverImage}
             />
           );
         })}
