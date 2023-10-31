@@ -2,6 +2,7 @@ import React from "react";
 import { FaChartLine } from "react-icons/fa";
 
 import logo from "../../logo.svg";
+import graphIcon from "../../../public/trending-medium-graph.svg"
 import "./App.css";
 import Post from "../Post/Post";
 import { Navbar } from "../NavBar/navbar";
@@ -105,8 +106,10 @@ function App() {
         <Navbar />
         <CallToAction />
         <section className="TrendingTitleContainer">
-          {/* <button className='trendingIcon'>{FaChartLine}</button> */}
-          <p className="TrendingTitle"> Trending on Medium</p>
+          <div className="TrendingTitle">
+            <img src={graphIcon} width={23}></img>
+            <p className="titleTrending">  Trending Medium</p>
+          </div>
           <div className="TrendingPostsContianer ">
             {posts.map((post, index) => {
               return (

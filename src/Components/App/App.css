@@ -8,11 +8,17 @@
 }
 
 
-.TrendingTitle{  
-  flex-direction: column;
+.TrendingTitle{
+  display: flex;
+  align-items: center;  
+  flex-direction: row;
   margin-top: 15px;
   margin-left: 15px;
   font-weight: 600;
+}
+
+.titleTrending{
+  margin-left: 10px;
 }
 
 .TrendingPostsContianer{
