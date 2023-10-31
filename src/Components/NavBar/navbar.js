@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./navbar.scss"
 
-// // import logo from "./public/logo.svg"
+import logo from "../../../public/logo.svg"
 
 
 export const Navbar = () => {
@@ -25,8 +25,7 @@ export const Navbar = () => {
     return (
         <header>
             <nav className="navbar active">
-                <h2>Logo</h2>
-                {/* <img src={logo}></img> */}
+                <img src={logo} width={150}></img>
                 <div className="navLinks">
                     <a href="/#">Our story</a>
                     <a href="/#">Membership</a>
