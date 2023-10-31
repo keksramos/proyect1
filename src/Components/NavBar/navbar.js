@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import "./navbar.scss"
 
-// import logo from "./logo.svg"
+// import logo from "./public/logo.svg"
 
 
 export const Navbar = () => {
@@ -15,6 +15,7 @@ export const Navbar = () => {
         <header>
             <nav ref={navref}>
                 <h2>Logo</h2>
+                {/* <img src={logo}></img> */}
                 <div className="navLinks">
                     <a href="/#">Our story</a>
                     <a href="/#">Membership</a>
