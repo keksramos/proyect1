@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaChartLine } from 'react-icons/fa';
 
 import logo from '../../logo.svg';
 import './App.css';
@@ -6,6 +7,7 @@ import Post from '../Post/Post'
 import  {Navbar} from '../NavBar/navbar';
 import { CallToAction } from '../CallToAction/CallToAction';
 import TrendingPosts from '../TrendingPosts/TrendingPosts'
+import {Discover} from '../Discover/Discover'
 
 function App() {
   const posts = [
@@ -56,6 +58,15 @@ function App() {
     },
     {
       id:6,
+      title:"How I scaled Amazon’s Load Generator to run on 1000s of machines", 
+      author:"Carlos Arguelles", 
+      creationDate:"Oct 21", 
+      description:"Moving from a single-host process to a distributed system",
+      coverImage:"https://miro.medium.com/v2/resize:fit:1400/format:webp/1*lgWp1uYIo4i4Y62dBBhGvA.png",
+      readTime: "10 min read"
+    },
+    {
+      id:7,
       title:"Sheet, dialog, or snackbar — what should a designer go for?", 
       author:"Ksenia Toloknova", 
       creationDate:"Oct 25", 
@@ -63,22 +74,41 @@ function App() {
       coverImage:"https://miro.medium.com/v2/resize:fill:400:268/1*VbCkG39Xi9-yQF8rRUVJWQ.jpeg",
       readTime: "6 min read"
     },
+    {
+      id:8,
+      title:"18 Life Lessons I’d Give My 18-Year-Old Self", 
+      author:"Scott H. Young", 
+      creationDate:"Oct 25", 
+      description:"I started writing my blog when I was a few months shy of 18 years old.",
+      coverImage:"https://miro.medium.com/v2/resize:fit:1400/format:webp/0*aaUaft0AxPSZuCNb.jpg",
+      readTime: "5 min read"
+    },
   ]
   return (
     <div className="App">
       <header className="App-header">
         <Navbar />
          <CallToAction />
-         {
-          posts.map((post, index ) => {
-            return <TrendingPosts key={index} id={post.id} title={post.title} author={post.author} creationDate={post.creationDate} description={post.description} readTime={post.readTime}/>
-          })
-         }
+         <section className="TrendingTitleContainer">
+          {/* <button className='trendingIcon'>{FaChartLine}</button> */}
+          <p className="TrendingTitle"> Trending on Medium</p>
+          <div className="TrendingPostsContianer">
+          {
+           posts.map((post, index ) => {
+             return <TrendingPosts key={index} id={post.id} title={post.title} author={post.author} creationDate={post.creationDate} description={post.description} readTime={post.readTime}/>
+            })
+}
+          </div>
+          </section>
         {
           posts.map((post, index) => {
             return <Post key={index} id={post.id} title={post.title} author={post.author} creationDate={post.creationDate} description={post.description} readTime={post.readTime}/>
           })
         }
+       <aside>
+       <Discover />
+       </aside>
+
       </header>
     </div>
   );

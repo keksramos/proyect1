@@ -1,5 +1,5 @@
 import React from "react";
-import {FaBookmark, FaRegBookmark} from "react-icons/fa"
+import { FaRegBookmark} from "react-icons/fa"
 import ('./post.scss')
 
 function Post(props){

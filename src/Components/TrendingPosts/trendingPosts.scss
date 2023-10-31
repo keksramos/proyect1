@@ -1,7 +1,4 @@
 .TendingPosts__container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
@@ -15,15 +12,12 @@
 }
 
 .textTrendingContainer{
-    display: flex;
-    flex-direction: row;
     padding: 0px;
     margin: 0px;
     font-size: 14px;
 }
 
 .indexTendringPost{
-    flex-direction: row;
     margin-top: 0px;
     color:rgb(242,242,242) ;
     font-size: 30px;
@@ -31,10 +25,8 @@
 }
 
 .postInfocontianerTP{
-    flex-direction: row;
     margin: 2px;
     padding: 0px;
-    // justify-content: flex-start;
 }
 
 .GreyLetters{
@@ -60,4 +52,8 @@
     padding: 2px;
     font-size: 16px;
     font-weight:700;
+}
+
+.trendingPostTitle{
+    font-weight: 300;
 }
