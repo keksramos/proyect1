@@ -6,7 +6,7 @@ import "./navbar.scss"
 
 export const Navbar = () => {
 
-    const [navBar, setNavBar] = useState(false);
+    const [navbar, setNavbar] = useState(false);
 
     const showNavBar = () => {
         navref.current.classList.toggle("responsive_nav")
@@ -14,9 +14,9 @@ export const Navbar = () => {
 
     const changeBackground = () => {
         if(window.scrollY >= 80) {
-            setNavBar(true)
+            setNavbar(true)
         } else{
-            setNavBar(false)
+            setNavbar(false)
         }
     }
 
@@ -24,7 +24,7 @@ export const Navbar = () => {
 
     return (
         <header>
-            <nav className={navBar ? 'navbar' : 'navbar active'}>
+            <nav className="navbar active">
                 <h2>Logo</h2>
                 {/* <img src={logo}></img> */}
                 <div className="navLinks">

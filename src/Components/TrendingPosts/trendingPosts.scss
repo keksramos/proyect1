@@ -1,20 +1,9 @@
-.TendingPosts__container{
-    justify-content: space-between;
-    width: 100%;
-}
-
 .TrendingContainer{
     display: flex;
-    height: auto;
+    // height: auto;
     width: 300px;
     margin: 15px;
     cursor: pointer;
-}
-
-.textTrendingContainer{
-    padding: 0px;
-    margin: 0px;
-    font-size: 14px;
 }
 
 .indexTendringPost{
@@ -27,17 +16,6 @@
 .postInfocontianerTP{
     margin: 2px;
     padding: 0px;
-}
-
-.GreyLetters{
-    margin: 0px;
-    padding: 0px;
-}
-
-.DateTP{
-    margin: 0px;
-    padding: 0px;
-    font-size: 12px;
 }
 
 .AuthorTP{
@@ -54,6 +32,13 @@
     font-weight:700;
 }
 
-.trendingPostTitle{
-    font-weight: 300;
+.GreyLetters{
+    margin: 0px;
+    padding: 0px;
+}
+
+.DateTP{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
 }

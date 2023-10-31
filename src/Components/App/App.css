@@ -8,14 +8,8 @@
 }
 
 
-.TrendingTitleContainer{
-  /* display: flex;
-  flex-direction: column; */
-  width: 100%;
-}
-
 .TrendingTitle{  
-  /* flex-direction: column; */
+  flex-direction: column;
   margin-top: 15px;
   margin-left: 15px;
   font-weight: 600;
@@ -24,6 +18,7 @@
 .TrendingPostsContianer{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   border-bottom: 1px solid rgb(242,242,242);
 }
 
