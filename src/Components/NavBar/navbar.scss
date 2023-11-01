@@ -55,6 +55,10 @@ li{
     cursor: pointer;
 }
 
+.navButton.active{
+    background-color: rgb(80,144,60);
+}
+
 
 // *{
 //     padding: 0;

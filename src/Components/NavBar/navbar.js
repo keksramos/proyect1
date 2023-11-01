@@ -32,7 +32,7 @@ export const NavBar = () => {
             </li>
           );
         })}
-        <button className="navButton">Get Started</button>
+        <button className={navbar ? 'navButton active' : 'navButton'}>Get Started</button>
       </ul>
     </nav>
   );
