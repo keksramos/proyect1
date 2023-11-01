@@ -1,25 +1,26 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
 
-// import React, {useState} from "react";
+import React, { useState } from "react";
 import "./navbar.scss";
 
 import logo from "../../../public/logo.svg";
 
 export const NavBar = () => {
+  const [navbar, setNavbar] = useState(false);
 
-    // const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 450) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
 
-    // const changeBackground = () => {
-    //     if(window.scrollY >= 80) {
-    //         setNavbar(true)
-    //     } else{
-    //         setNavbar(false)
-    //     }
-    // }
-    
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <nav className="NavbarItems">
+    <nav className={navbar ? 'NavbarItems active' : 'NavbarItems'}>
       <img className="navbar-logo" src={logo} width={150}></img>
       <ul className="menu-list">
         {MenuItems.map((item, index) => {
@@ -36,24 +37,3 @@ export const NavBar = () => {
     </nav>
   );
 };
-// export const Navbar = () => {
-
-
-
-//     window.addEventListener('scroll', changeBackground)
-
-//     return (
-//         <header>
-//             <nav className="navbar active">
-//                 <img src={logo} width={150}></img>
-//                 <div className="navLinks">
-//                     <a href="/#">Our story</a>
-//                     <a href="/#">Membership</a>
-//                     <a href="/#">Write</a>
-//                     <a href="/#">Sign In</a>
-//                     <button className="navButton">Get started</button>
-//                 </div>
-//             </nav>
-//         </header>
-//     )
-// }
