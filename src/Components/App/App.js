@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaChartLine } from "react-icons/fa";
 
 import logo from "../../logo.svg";
@@ -11,6 +11,35 @@ import TrendingPosts from "../TrendingPosts/TrendingPosts";
 import { Discover } from "../Discover/Discover";
 
 function App() {
+  // const [discoverWidth, setDiscoverWidth] = useState(flase)
+  // const [discoverTop, setDiscoverTop] = useState(false)
+
+  // useEffect(()=> {
+  //   const discoverEl = document.querySelector('#discover-sticky').getBoundingClientRect()
+  //   setDiscoverWidth(discoverEl.width)
+  //   setDiscoverTop(discoverEl.top)
+  // }, [])
+
+  // useEffect(()=> {
+  //   if(!discoverTop) return
+
+  //   window.addEventListener('scroll', isSticky)
+  //   return ()=> {
+  //     window.removeEventListener('scroll', isSticky)
+  //   }
+  // }, [discoverTop])
+
+  // const isSticky = (e) => {
+  //   const discoverEl = document.querySelector('#discover')
+  //   const scrollTop = window.scrollY
+
+  //   if (scrollTop >= sidebarTop -10){
+  //     discoverEl.classList.add('is-sticky')
+  //   }else{
+  //     discoverEl.classList.remove('is-sticky')
+  //   }
+  // }
+  
   const posts = [
     {
       id: "01",
@@ -22,6 +51,7 @@ function App() {
       coverImage:
         "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*lgWp1uYIo4i4Y62dBBhGvA.png",
       readTime: "6 min read",
+      trending:true,
     },
     {
       id: "02",
@@ -33,6 +63,7 @@ function App() {
       coverImage:
         "https://miro.medium.com/v2/resize:fill:400:268/0*5hJgvT1vt6PZRMd3",
       readTime: "6 min read",
+      trending:true,
     },
     {
       id: "03",
@@ -44,6 +75,7 @@ function App() {
       coverImage:
         "https://miro.medium.com/v2/resize:fill:400:268/1*IraA41cyapCYG2vMH2Tvxw.png",
       readTime: "6 min read",
+      trending:true,
     },
     {
       id: "04",
@@ -55,6 +87,7 @@ function App() {
       coverImage:
         "https://miro.medium.com/v2/resize:fill:400:268/1*2RRtiHusrykTmfM7FcUffw.jpeg",
       readTime: "6 min read",
+      trending:true,
     },
     {
       id: "05",
@@ -66,6 +99,7 @@ function App() {
       coverImage:
         "https://miro.medium.com/v2/resize:fill:400:268/0*dZJ-oQFBgymsAleq",
       readTime: "6 min read",
+      trending:true,
     },
     {
       id: "06",
@@ -76,6 +110,7 @@ function App() {
       coverImage:
         "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*lgWp1uYIo4i4Y62dBBhGvA.png",
       readTime: "10 min read",
+      trending:true,
     },
     {
       id: "07",
@@ -87,6 +122,7 @@ function App() {
       coverImage:
         "https://miro.medium.com/v2/resize:fill:400:268/1*VbCkG39Xi9-yQF8rRUVJWQ.jpeg",
       readTime: "6 min read",
+      trending:false,
     },
     {
       id: "08",
@@ -98,6 +134,7 @@ function App() {
       coverImage:
         "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*aaUaft0AxPSZuCNb.jpg",
       readTime: "5 min read",
+      trending:false,
     },
   ];
   return (
@@ -112,18 +149,21 @@ function App() {
           </div>
           <div className="TrendingPostsContianer ">
             {posts.map((post, index) => {
-              return (
-                <TrendingPosts
-                  key={index}
-                  id={post.id}
-                  title={post.title}
-                  author={post.author}
-                  creationDate={post.creationDate}
-                  description={post.description}
-                  readTime={post.readTime}
-                />
-              );
+              if(post.trending == true){
+                return (
+                  <TrendingPosts
+                    key={index}
+                    id={post.id}
+                    title={post.title}
+                    author={post.author}
+                    creationDate={post.creationDate}
+                    description={post.description}
+                    readTime={post.readTime}
+                  />
+                );
+              }
             })}
+            {/* }).includes(post.trending == true)} */}
           </div>
         </section>
         <section className="Content-Body">
@@ -143,6 +183,7 @@ function App() {
           );
         })}
         </div>
+        {/* <div style={{discoverWidth}} id="discover-sticky"> */}
         <div>
         <Discover />
         </div>

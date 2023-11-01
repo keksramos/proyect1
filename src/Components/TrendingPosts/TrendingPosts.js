@@ -4,6 +4,8 @@ import ('./trendingPosts.scss')
 function TrendingPosts(props){
     const {id, title, author, creationDate, readTime} = props;
 
+    // const trendingPostList = props.slice(0,5)
+    // console.log(trendingPostList)
 
 
     return <section className="TendingPosts__container">
