@@ -5,7 +5,7 @@ import logo from "../../logo.svg";
 import graphIcon from "../../../public/trending-medium-graph.svg"
 import "./App.css";
 import Post from "../Post/Post";
-import { Navbar } from "../NavBar/navbar";
+import {NavBar} from "../NavBar/Navbar"
 import { CallToAction } from "../CallToAction/CallToAction";
 import TrendingPosts from "../TrendingPosts/TrendingPosts";
 import { Discover } from "../Discover/Discover";
@@ -77,33 +77,33 @@ function App() {
         "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*lgWp1uYIo4i4Y62dBBhGvA.png",
       readTime: "10 min read",
     },
-    // {
-    //   id: "07",
-    //   title: "Sheet, dialog, or snackbar — what should a designer go for?",
-    //   author: "Ksenia Toloknova",
-    //   creationDate: "Oct 25",
-    //   description:
-    //     "When crafting mobile app interfaces, designers continually encounter the necessity to make decisions.",
-    //   coverImage:
-    //     "https://miro.medium.com/v2/resize:fill:400:268/1*VbCkG39Xi9-yQF8rRUVJWQ.jpeg",
-    //   readTime: "6 min read",
-    // },
-    // {
-    //   id: "08",
-    //   title: "18 Life Lessons I’d Give My 18-Year-Old Self",
-    //   author: "Scott H. Young",
-    //   creationDate: "Oct 25",
-    //   description:
-    //     "I started writing my blog when I was a few months shy of 18 years old.",
-    //   coverImage:
-    //     "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*aaUaft0AxPSZuCNb.jpg",
-    //   readTime: "5 min read",
-    // },
+    {
+      id: "07",
+      title: "Sheet, dialog, or snackbar — what should a designer go for?",
+      author: "Ksenia Toloknova",
+      creationDate: "Oct 25",
+      description:
+        "When crafting mobile app interfaces, designers continually encounter the necessity to make decisions.",
+      coverImage:
+        "https://miro.medium.com/v2/resize:fill:400:268/1*VbCkG39Xi9-yQF8rRUVJWQ.jpeg",
+      readTime: "6 min read",
+    },
+    {
+      id: "08",
+      title: "18 Life Lessons I’d Give My 18-Year-Old Self",
+      author: "Scott H. Young",
+      creationDate: "Oct 25",
+      description:
+        "I started writing my blog when I was a few months shy of 18 years old.",
+      coverImage:
+        "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*aaUaft0AxPSZuCNb.jpg",
+      readTime: "5 min read",
+    },
   ];
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar />
+        <NavBar />
         <CallToAction />
         <section className="TrendingTitleContainer">
           <div className="TrendingTitle">

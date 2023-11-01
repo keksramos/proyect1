@@ -1,53 +1,91 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.App{
+.NavbarItems{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    // width: 100vh;
-}
-
-.navbar{
-    display: flex;
-    align-items:center;
     justify-content: space-between;
-    width: 100%;
     height: 80px;
-    padding: 0 2rem;
+    width: 100%;
     background-color: rgb(245, 187, 79);
-    color: black;
-    border-bottom: 1px solid black;
     font-size: 14px;
+    color: black;
     position: fixed;
     top: 0;
     left: 0;
-}
-.navbar .active{
-    background-color: transparent;
+    border-bottom: 1px solid black;
 }
 
+.navbar-logo{
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
 
-nav a{
-    margin: 0 2rem;
-    color: #000;
+.menu-list{
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    float: left;
+}
+.nav-links{    
+    margin-right: 2rem;
+    color:rgb(0, 0, 0);
     text-decoration: none;
 }
 
-nav .navLinks{
-    justify-content: flex-end;
-}
-
-nav .navButton {
-    padding: 5px;
-    width: 100px;
+.navButton { 
+    margin-right: 15px;
+    width:max-content;
+    padding: 10px;
     height: 35px;
     border-radius: 17px;
     background-color: black;
     color: white;
+    font-size: 14px;
     border:none;
     outline:none;
     cursor: pointer;
 }
+
+
+// *{
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
+
+
+// .navbar{
+//     display: flex;
+//     align-items:center;
+//     justify-content: space-between;
+//     width: 100%;
+//     height: 80px;
+//     padding: 0 2rem;
+//     background-color: rgb(245, 187, 79);
+//     color: black;
+//     border-bottom: 1px solid black;
+//     font-size: 14px;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+// }
+// .navbar .active{
+//     background-color: transparent;
+// }
+
+
+// nav a{
+//     margin: 0 2rem;
+//     color: #000;
+//     text-decoration: none;
+// }
+
+// nav .navLinks{
+//     justify-content: flex-end;
+// }
+
