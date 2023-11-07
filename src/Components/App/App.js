@@ -10,35 +10,10 @@ import { CallToAction } from "../CallToAction/CallToAction";
 import TrendingPosts from "../TrendingPosts/TrendingPosts";
 import { Discover } from "../Discover/Discover";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 function App() {
-  // const [discoverWidth, setDiscoverWidth] = useState(flase)
-  // const [discoverTop, setDiscoverTop] = useState(false)
-
-  // useEffect(()=> {
-  //   const discoverEl = document.querySelector('#discover-sticky').getBoundingClientRect()
-  //   setDiscoverWidth(discoverEl.width)
-  //   setDiscoverTop(discoverEl.top)
-  // }, [])
-
-  // useEffect(()=> {
-  //   if(!discoverTop) return
-
-  //   window.addEventListener('scroll', isSticky)
-  //   return ()=> {
-  //     window.removeEventListener('scroll', isSticky)
-  //   }
-  // }, [discoverTop])
-
-  // const isSticky = (e) => {
-  //   const discoverEl = document.querySelector('#discover')
-  //   const scrollTop = window.scrollY
-
-  //   if (scrollTop >= sidebarTop -10){
-  //     discoverEl.classList.add('is-sticky')
-  //   }else{
-  //     discoverEl.classList.remove('is-sticky')
-  //   }
-  // }
+  
   
   const posts = [
     {
