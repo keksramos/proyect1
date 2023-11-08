@@ -1,9 +1,16 @@
-.TrendingContainer{
+.trendingPostsContent{
     display: flex;
+    // justify-content: center;
     // height: auto;
-    width: 300px;
+    width: 100vh;
     margin: 15px;
     cursor: pointer;
+    background-color: #fefefe;
+
+    .TrendingContainer{
+        width: 200px;
+        justify-content: center;
+    }
 }
 
 .indexTendringPost{
