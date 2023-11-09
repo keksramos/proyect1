@@ -1,0 +1,22 @@
+.WriteSection{
+    
+    .WriteForm{
+        display: flex;
+        flex-direction: column;
+    }
+    *{
+        margin: 5px;
+    }
+    .postDescription{
+        height: 250px;
+    }
+
+    .publishButton{
+        width: fit-content;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 18px;
+    }
+}

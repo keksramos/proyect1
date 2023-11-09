@@ -8,7 +8,7 @@ function TrendingPosts(props){
     // console.log(trendingPostList)
 
 
-    return <section className="TendingPosts__container">
+    return <section className="TrendingPosts__container">
         <div className="TrendingContainer">
         <p className="indexTendringPost">{id}</p>
         <div className="postInfocontianerTP">
@@ -19,7 +19,7 @@ function TrendingPosts(props){
             <p className="DateTP">·</p>
             <p className="DateTP">{readTime}</p>
         </div></div>
-    </div>;
+    </div>
     </section>
 }
 
