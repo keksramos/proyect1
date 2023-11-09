@@ -1,14 +1,14 @@
 .trendingPostsContent{
     display: flex;
-    // justify-content: center;
-    // height: auto;
+
     width: 100vh;
     margin: 15px;
     cursor: pointer;
     background-color: #fefefe;
+    padding-bottom: 15px;
 
     .TrendingContainer{
-        width: 200px;
+        width: 250px;
         justify-content: center;
     }
 }
