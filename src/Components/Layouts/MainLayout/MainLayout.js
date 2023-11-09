@@ -141,22 +141,6 @@ export default function MainLayout() {
           <div className="mainContent">
             <Outlet />
         </div>
-        {/* <div className="postsContent">
-          {posts.map((post, index) => {
-            return (
-              <Post
-                key={index}
-                id={post.id}
-                title={post.title}
-                author={post.author}
-                creationDate={post.creationDate}
-                description={post.description}
-                readTime={post.readTime}
-                coverImage={post.coverImage}
-              />
-            );
-          })}
-        </div> */}
         <aside className="Discover">
           <Discover />
         </aside>

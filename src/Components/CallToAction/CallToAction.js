@@ -11,8 +11,11 @@ export const CallToAction = () => {
                 <button className="CTA__Button">Start reading</button>
             </div>
 
-            <div className="imageContainerCTA"> M M M M M M M M M </div>
+            <div className="imageContainerCTA">
+            M M M M M M M
+            </div>
 
         </div>
     )
 }
+
