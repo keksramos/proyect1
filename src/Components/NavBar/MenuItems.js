@@ -11,7 +11,7 @@ export const MenuItems=[
     },
     {
         title: "Write",
-        url: "#",
+        url: "/write",
         cName: 'nav-links'
     },
     {

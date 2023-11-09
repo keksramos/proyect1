@@ -7,7 +7,9 @@ import "./App.css";
 // import Post from "../Post/Post";
 // import {NavBar} from "../NavBar/Navbar"
 import MainLayout from '../Layouts/MainLayout/MainLayout'
+import WriteLayout from "../Layouts/WriteLayout/writeLayout";
 import Home from '../../Pages/Home/Home'
+import Write from "../../Pages/Write/Write";
 // import { CallToAction } from "../CallToAction/CallToAction";
 // import TrendingPosts from "../TrendingPosts/TrendingPosts";
 // import { Discover } from "../Discover/Discover";
@@ -23,6 +25,9 @@ function App(){
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />}/>
+          </Route>
+          <Route path="/write" element={<WriteLayout />}>
+            <Route index element={<Write />}/>
           </Route>
       </Routes>
     </BrowserRouter>

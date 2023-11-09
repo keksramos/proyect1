@@ -4,18 +4,17 @@
 import React, { useState } from "react";
 import "../NavbarPosts/navbarPosts.scss";
 
-import logo from "../../../public/logo.svg";
+import smallLogo from "../../../public/logoWrite.png";
 
-export const NavBar = () => {
-  const [navbar, setNavbar] = useState(false);
+export const NavbarPosts = () => {
+  // const [navbar, setNavbar] = useState(false);
 
   return (
     <nav className="navbarPosts">
-      <img className="navbar-logo" src={logo} width={150}></img>
+      <img className="navbar-logo" src={smallLogo} width={150}></img>
       <div>
         <button>Write</button>
-        <button className="signUpButton">Sign Up</button>
-        <button>Sign In</button>
+        <button>Notification</button>
       </div>
 
     </nav>

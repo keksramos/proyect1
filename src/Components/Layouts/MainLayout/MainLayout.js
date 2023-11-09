@@ -3,7 +3,6 @@ import { Outlet } from "react-router-dom";
 import { NavBar } from "../../NavBar/Navbar";
 import { CallToAction } from "../../CallToAction/CallToAction";
 import TrendingPosts from "../../TrendingPosts/TrendingPosts";
-import Post from "../../Post/Post";
 import { Discover } from "../../Discover/Discover";
 
 import "./mainLayout.scss";
@@ -111,12 +110,10 @@ export default function MainLayout() {
   return (
     <div className="mainLayout">
       <NavBar />
-      {/* <div className="mainContent">
-                <Outlet />
-            </div> */}
       <div className="callToActionContent">
         <CallToAction />
       </div>
+
       <section className="trendingContent">
         <div className="TrendingTitle">
           <img src={graphIcon} width={23}></img>
@@ -141,7 +138,10 @@ export default function MainLayout() {
         </div>
       </section>
       <section className="Content-Body">
-        <div className="postsContent">
+          <div className="mainContent">
+            <Outlet />
+        </div>
+        {/* <div className="postsContent">
           {posts.map((post, index) => {
             return (
               <Post
@@ -156,7 +156,7 @@ export default function MainLayout() {
               />
             );
           })}
-        </div>
+        </div> */}
         <aside className="Discover">
           <Discover />
         </aside>
