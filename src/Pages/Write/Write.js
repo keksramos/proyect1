@@ -57,7 +57,7 @@ export default function Write(){
                 <input type="text" id="postCoverImage" placeholder="Cover Image"></input>
                 <input type="text" id="postReadtime" placeholder="Read Time"></input>
                 <input type="text" id="postCreation" placeholder="Creation"></input>
-                <button type="submit">Publish</button>
+                <button className="publishButton"type="submit">Publish</button>
             </form>
         </div>
     )
