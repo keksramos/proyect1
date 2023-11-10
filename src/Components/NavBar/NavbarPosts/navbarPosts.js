@@ -1,7 +1,6 @@
-// import React, { Component } from "react";
-// import { MenuItems } from "./MenuItems";
-
 import React, { useState } from "react";
+import { FaPencilAlt, FaRegBell} from "react-icons/fa"
+
 import "../NavbarPosts/navbarPosts.scss";
 
 import smallLogo from "../../../../public/logoWrite.png";
@@ -18,8 +17,8 @@ export const NavbarPosts = () => {
       </form> */}
       </div>
       <div>
-        <button>Write</button>
-        <button>Notification</button>
+        <button className="navbarPostButton"> <FaPencilAlt size={15}/> Write</button>
+        <button className="navbarPostButton"><FaRegBell size={15}/></button>
       </div>
 
     </nav>

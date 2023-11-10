@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { FaChartLine } from "react-icons/fa";
 
-// import logo from "../../logo.svg";
 import graphIcon from "../../../public/trending-medium-graph.svg"
 import "./home.scss";
 import Post from "../../Components/Post/Post";
-// import { NavBar } from "../../Components/NavBar/NavBar"
 import { CallToAction } from "../../Components/CallToAction/CallToAction";
 import TrendingPosts from "../../Components/TrendingPosts/TrendingPosts";
 import { Discover } from "../../Components/Discover/Discover";
-
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function Home() {
   const posts = [

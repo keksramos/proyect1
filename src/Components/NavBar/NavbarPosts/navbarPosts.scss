@@ -9,20 +9,22 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    // height: 80px;
-    // width: 100%;
-    // background-color: #fefefe;
-    // font-size: 14px;
-    // color: rgb(18, 18, 18);
-    // position: fixed;
-    // top: 0;
-    // left: 0;
+    height: 50px;
     border-bottom: 1px solid rgb(242,242,242);
 
     .navbar-logo{
         justify-self: start;
         margin-left: 20px;
         cursor: pointer;
+
+    }
+    .navbarPostButton{
+        border: none;
+        background-color: white;
+        margin: 0px 10px;
+        color: grey;
+        align-items: center;
+
     }
     
 }
