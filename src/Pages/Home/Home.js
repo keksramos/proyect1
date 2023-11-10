@@ -11,7 +11,17 @@ function Home() {
       const response = await fetch("http://localhost:5001/posts")
       const data = await response.json();
 
-      // console.log(data)
+      // Convert date to dateString 
+      data.forEach((post) => {
+        const date = new Date(post.creationDate)
+
+        const month = date.getMonth()
+        const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dic']
+
+        const dateString = `${monthNames[month]} ${date.getDate()}`
+        post.creationDate = dateString
+      })
+
       setPosts(data)
     }
     fetchPosts()

@@ -2,7 +2,7 @@ import React from "react";
 import("./trendingPosts.scss");
 
 function TrendingPosts(props) {
-  const { id, title, author, creationDate, readTime } = props;
+  const { title, author, creationDate, readTime } = props;
 
   return (
     <section className="TrendingPosts__container">
