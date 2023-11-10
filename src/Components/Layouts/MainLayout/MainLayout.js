@@ -119,7 +119,7 @@ export default function MainLayout() {
           <img src={graphIcon} width={23}></img>
           <p className="titleTrending"> Trending Medium</p>
         </div>
-        <div className="trendingPostsContent">
+        <div className="TrendingPosts__container">
           {posts.map((post, index) => {
             if (post.trending == true) {
               return (

@@ -1,9 +1,8 @@
-.trendingPostsContent{
+.TrendingPosts__container{
     display: flex;
-
-    width: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 15px;
-    background-color: #fefefe;
     padding-bottom: 15px;
     
     .TrendingContainer{
@@ -11,43 +10,40 @@
         width: 250px;
         justify-content: center;
     }
+    .indexTendringPost{
+        margin-top: 0px;
+        color:rgb(242,242,242) ;
+        font-size: 30px;
+        margin-right: 10px;
+    }
+      
+    .AuthorTP{
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+        font-weight:700;
+    }
+    
+    .TitleTP{
+        margin: 0px;
+        padding: 2px;
+        font-size: 16px;
+        font-weight:700;
+    }
+    
+    .GreyLetters{
+        color:grey;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        
+        .DateTP{
+            color:grey;
+            margin: 0px;
+            padding-left: 5px;
+            font-size: 12px;
+        }
 }
 
-.indexTendringPost{
-    margin-top: 0px;
-    color:rgb(242,242,242) ;
-    font-size: 30px;
-    margin-right: 10px;
 }
 
-.postInfocontianerTP{
-    margin: 2px;
-    padding: 0px;
-}
-
-.AuthorTP{
-    margin: 0px;
-    padding: 0px;
-    font-size: 12px;
-    font-weight:700;
-}
-
-.TitleTP{
-    margin: 0px;
-    padding: 2px;
-    font-size: 16px;
-    font-weight:700;
-}
-
-.GreyLetters{
-    color:grey;
-    margin: 0px;
-    padding: 0px;
-}
-
-.DateTP{
-    color:grey;
-    margin: 0px;
-    padding-left: 5px;
-    font-size: 12px;
-}
