@@ -13,7 +13,7 @@ export const NavbarPosts = () => {
       <img className="navbar-logo" src={smallLogo} width={60} ></img>
       <input className="searchInNavBar" type="text" placeholder="Search"></input>
       </div>
-      <div>
+      <div className="rightSectionNavbar">
         <button className="navbarPostButton" href={"/write"}> <FaPencilAlt size={15}/> Write</button>
         <button className="navbarPostButton"><FaRegBell size={15}/></button>
         <button className="userButton"><FaUser size={15}/></button>

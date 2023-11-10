@@ -1,4 +1,3 @@
- // import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
 
 import React, { useState } from "react";

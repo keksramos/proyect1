@@ -30,32 +30,37 @@
             width: 180px;
             border-radius: 15px;
             border: none;
+            
+            .searchText{
+                font-size: 15px;
+                color: grey;
+            }
         }
     }
 
-    .searchText{
-        font-size: 15px;
-        color: grey;
-    }
-    .navbarPostButton{
-        border: none;
-        background-color: white;
-        margin: 0px 15px;
-        color: grey;
-        align-items: center;
-        cursor: pointer;
+    .rightSectionNavbar{
+                
+        .navbarPostButton{
+            border: none;
+            background-color: white;
+            margin: 0px 15px;
+            color: grey;
+            align-items: center;
+            cursor: pointer;
+        }
+    
+        .userButton{
+            height: 30px;
+            width: 30px;
+            padding: 7px;
+            margin: 0px 15px;
+            border-radius: 20px;
+            border: none;
+            background-color: black;
+            color: whitesmoke;
+    
+        }
     }
 
-    .userButton{
-        height: 30px;
-        width: 30px;
-        padding: 7px;
-        margin: 0px 15px;
-        border-radius: 20px;
-        border: none;
-        background-color: black;
-        color: whitesmoke;
-
-    }
     
 }
