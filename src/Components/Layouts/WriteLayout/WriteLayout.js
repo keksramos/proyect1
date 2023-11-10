@@ -7,7 +7,6 @@ export default function WriteLayout() {
   return (
     <div className="writeLayout">
       < NavbarPosts/>
-      {/* <h1>Navbar</h1> */}
       <div className="mainContent">
         <Outlet />
       </div>
