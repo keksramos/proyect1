@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, { useState} from "react";
 import "./write.scss"
 
 export default function Write(){
@@ -19,7 +19,7 @@ export default function Write(){
 
         const value = e.target.value
         if(value.length <= 1){
-            alert("El título debe tener al menos 1 caracteres")
+            alert("El ID debe tener al menos 1 caracteres")
             setValid({
                 ...valid,
                 postID:false
@@ -205,7 +205,12 @@ export default function Write(){
                 <label>ID</label>
                 <input type="text" id="postID" placeholder="ID" onBlur={handleID}></input>
                 <label>Author</label>
-                <input type="text" id="postAuthor" placeholder="Author" onBlur={handleAuthor}></input>
+                <select id={"postAuthor"} onBlur={handleAuthor}>
+                    <option value="0">Selecciona un autor</option>
+                    <option value="1">John Doe</option>
+                    <option value="2">Jane Doe</option>
+                    <option value="3">Juan Camaney</option>
+                </select>
                 <label>Title</label>
                 <input type="text" id="postTitle" placeholder="Title" onBlur={handleTitle}></input>
                 <label>Description</label>
@@ -216,7 +221,7 @@ export default function Write(){
                 <input type="text" id="postReadtime" placeholder="ej. 6 min" onBlur={handleReadTime}></input>
                 <label>Created</label>
                 <input type="text" id="postCreation" placeholder="Ej. Dic 11" onBlur={handleCreation}></input>
-                <button className="publishButton"type="submit" disabled={!isValid}>Publish</button>
+                <button className="publishButton"type="submit" >Publish</button>
             </form>
         </div>
     )
