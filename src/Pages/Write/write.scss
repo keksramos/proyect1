@@ -18,5 +18,22 @@
         color: white;
         border: none;
         border-radius: 18px;
+
+        &:disabled {
+            background-color: #ccc;
+            color: #000;
+        }
+    }
+    label{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 0px;
+    }
+
+    input{
+        padding: 5px;
+    }
+    textarea{
+        padding: 5px;
     }
 }
