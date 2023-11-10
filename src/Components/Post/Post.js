@@ -6,7 +6,7 @@ function Post(props){
     const {title, author, creationDate, description, coverImage, readTime} = props;
 
     return <div className="postContainer">
-        <section className="textContainer">
+        <section className="postTextContainer">
             <p className="Author">{author}</p>
             <p><b>{title}</b></p>
             <p className="Description">{description}</p>
