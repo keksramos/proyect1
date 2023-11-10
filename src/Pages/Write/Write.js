@@ -108,7 +108,7 @@ export default function Write(){
         e.preventDefault();
 
         const value = e.target.value;
-        if (value.length < 2) {
+        if (value === "0") {
             alert("El contenido debe tener al menos 3 caracteres.");
             setValid({
                 ...valid,
@@ -172,8 +172,8 @@ export default function Write(){
             alert("El título debe tener al menos 5 caracteres")
         }
 
-        if (postReadtime.length < 2) {
-            alert("El contenido debe tener al menos 3 caracteres.");
+        if (postReadtime.length === "0") {
+            alert("Debes de seleccionar un tiempo de lectura.");
         }
         
         if (postCreation.length < 3) {
@@ -218,7 +218,13 @@ export default function Write(){
                 <label>Cover Image</label>
                 <input type="text" id="postCoverImage" placeholder="URL" onBlur={handleCoverImage}></input>
                 <label>Read Time</label>
-                <input type="text" id="postReadtime" placeholder="ej. 6 min read" onBlur={handleReadTime}></input>
+                <select id={"postReadtime"} onBlur={handleReadTime}>
+                <option value="0">Selecciona tiempo de lectura</option>
+                    <option value="1">5 min read</option>
+                    <option value="2">8 min read</option>
+                    <option value="3">15 min read</option>
+                </select>
+                {/* <input type="text" id="postReadtime" placeholder="ej. 6 min read" onBlur={handleReadTime}></input> */}
                 <label>Created</label>
                 <input type="date" id="postCreation" onBlur={handleCreation}></input>
                 <button className="publishButton"type="submit" >Publish</button>

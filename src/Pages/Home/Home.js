@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { FaChartLine } from "react-icons/fa";
 
-import graphIcon from "../../../public/trending-medium-graph.svg"
 import "./home.scss";
 import Post from "../../Components/Post/Post";
-import { CallToAction } from "../../Components/CallToAction/CallToAction";
-import TrendingPosts from "../../Components/TrendingPosts/TrendingPosts";
-import { Discover } from "../../Components/Discover/Discover";
 
 function Home() {
   const posts = [
