@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPencilAlt, FaRegBell} from "react-icons/fa"
+import { FaPencilAlt, FaRegBell, FaUser} from "react-icons/fa"
 
 import "../NavbarPosts/navbarPosts.scss";
 
@@ -17,8 +17,9 @@ export const NavbarPosts = () => {
       </form> */}
       </div>
       <div>
-        <button className="navbarPostButton"> <FaPencilAlt size={15}/> Write</button>
+        <button className="navbarPostButton" href={"/write"}> <FaPencilAlt size={15}/> Write</button>
         <button className="navbarPostButton"><FaRegBell size={15}/></button>
+        <button className="userButton"><FaUser size={15}/></button>
       </div>
 
     </nav>
