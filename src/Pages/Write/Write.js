@@ -218,7 +218,7 @@ export default function Write(){
                 <label>Cover Image</label>
                 <input type="text" id="postCoverImage" placeholder="URL" onBlur={handleCoverImage}></input>
                 <label>Read Time</label>
-                <input type="text" id="postReadtime" placeholder="ej. 6 min" onBlur={handleReadTime}></input>
+                <input type="text" id="postReadtime" placeholder="ej. 6 min read" onBlur={handleReadTime}></input>
                 <label>Created</label>
                 <input type="text" id="postCreation" placeholder="Ej. Dic 11" onBlur={handleCreation}></input>
                 <button className="publishButton"type="submit" >Publish</button>
