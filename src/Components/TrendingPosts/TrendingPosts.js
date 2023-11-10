@@ -6,7 +6,7 @@ function TrendingPosts(props) {
 
   return (
     <section className="TrendingPosts__container">
-        <p className="indexTendringPost">{id}</p>
+        {/* <p className="indexTendringPost">{id}</p> */}
       <div className="TrendingContainer">
       <p className="AuthorTP">{author}</p>
           <p className="TitleTP">{title}</p>

@@ -3,11 +3,11 @@ import { FaRegBookmark} from "react-icons/fa"
 import ('./post.scss')
 
 function Post(props){
-    const {title, author, creationDate, description, coverImage, readTime} = props;
+    const {title, creationDate, description, coverImage, readTime} = props;
 
     return <div className="postContainer">
         <section className="postTextContainer">
-            <p className="Author">{author}</p>
+            {/* <p className="Author">{author}</p> */}
             <p><b>{title}</b></p>
             <p className="Description">{description}</p>
             <div className="GreyLetters">
