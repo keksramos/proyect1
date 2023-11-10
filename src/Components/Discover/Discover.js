@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "./discover.scss";
+import Footer from "../Footer/Footer";
 
 export const Discover = () => {
 
@@ -48,17 +49,7 @@ export const Discover = () => {
         <p className="moreTopicsDiscover">See more topics</p>
       </div>
       <div>
-        <ul className="footerContianer">
-          <li className="footer">Help</li>
-          <li className="footer">Status</li>
-          <li className="footer">About</li>
-          <li className="footer">Careers</li>
-          <li className="footer">Blog</li>
-          <li className="footer">Privacy</li>
-          <li className="footer">Terms</li>
-          <li className="footer">Text to speech</li>
-          <li className="footer">Teams</li>
-        </ul>
+      <Footer />
       </div>
     </section>
   );
