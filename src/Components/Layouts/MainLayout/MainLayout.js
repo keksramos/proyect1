@@ -138,9 +138,9 @@ export default function MainLayout() {
               return (
                 <TrendingPosts
                   key={index}
-                  id={post.id}
+                  // id={post.id}
                   title={post.title}
-                  author={post.author}
+                  // author={post.author}
                   creationDate={post.creationDate}
                   description={post.description}
                   readTime={post.readTime}

@@ -7,19 +7,31 @@ function Home() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    const fetchComments = async (postId) => {
+      const response = await fetch(`http://localhost:5001/commentsbypost/${postId}`)
+      const data = await response.json()
+
+      return data.length
+    }
     const fetchPosts = async () => {
       const response = await fetch("http://localhost:5001/posts")
       const data = await response.json();
 
       // Convert date to dateString 
-      data.forEach((post) => {
+      data.forEach(async (post) => {
         const date = new Date(post.creationDate)
 
         const month = date.getMonth()
         const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dic']
 
-        const dateString = `${monthNames[month]} ${date.getDate()}`
+        const dateString = `${monthNames[month]}, ${date.getDate()}`
         post.creationDate = dateString
+
+        //Get comments count
+        const comments = await fetchComments(post._id)
+
+
+
       })
 
       setPosts(data)
@@ -128,17 +140,17 @@ function Home() {
     <div className="Home">
         <section className="Content-Body">
         <div>
-        {posts.map((post, index) => {
+        {posts.map((post) => {
           return (
             <Post
-              key={index}
-              id={post.id}
+              _id={post._id}
               title={post.title}
               author={post.author}
               creationDate={post.creationDate}
               description={post.description}
               readTime={post.readTime}
               coverImage={post.coverImage}
+              comments={post.comments}
             />
           );
         })}

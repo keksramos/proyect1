@@ -6,6 +6,7 @@ import WriteLayout from "../Layouts/WriteLayout/writeLayout";
 import PostLayout from "../Layouts/PostLayout/PostLayout";
 import Home from '../../Pages/Home/Home'
 import Write from "../../Pages/Write/Write";
+import PostView from "../Post/View/view";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -23,6 +24,7 @@ function App(){
             <Route index element={<Write />}/>
           </Route>
           <Route path="/view" element={<PostLayout />}>
+            <Route path=":id" element={<PostView/>}/>
             <Route index element={<Write />}/>
           </Route>
       </Routes>

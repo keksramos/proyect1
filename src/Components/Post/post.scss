@@ -11,6 +11,10 @@
         cursor: pointer;
         width: 100%;
 
+        .postWithLink{
+            text-decoration: none;
+        }
+
         .Author{
             font-size: 13px;
             font-weight: 500;
@@ -45,12 +49,12 @@
             }
 
             .bookmarkButton{
-                display: flex;
-                justify-content: flex-end;
+                // display: flex;
+                // justify-content: flex-end;
                 background-color: rgba(0,0,0,0);
                 border: 0px;
                 padding-top: 15px;
-                padding-left: 200px;
+                padding-left: 150px;
                 cursor: pointer;
             
             }
