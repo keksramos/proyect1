@@ -229,7 +229,7 @@ export default function Write(){
                 {/* <input type="text" id="postReadtime" placeholder="ej. 6 min read" onBlur={handleReadTime}></input> */}
                 <label>Created</label>
                 <input type="date" id="postCreation" onBlur={handleCreation}></input>
-                <button className="publishButton"type="submit" >Publish</button>
+                <button className="publishButton" type="submit" >Publish</button>
             </form>
         </div>
     )
