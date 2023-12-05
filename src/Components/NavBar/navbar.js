@@ -1,5 +1,5 @@
 import { MenuItems } from "./MenuItems";
-
+import { Link } from 'react-router-dom'
 import React, { useState } from "react";
 import "./navbar.scss";
 
@@ -20,7 +20,7 @@ export const NavBar = () => {
 
   return (
     <nav className={navbar ? 'NavbarItems active' : 'NavbarItems'}>
-      <img className="navbar-logo" src={logo} width={150}></img>
+      <Link to='/'><img className="navbar-logo" src={logo} width={150} href="/"></img></Link>
       <ul className="menu-list">
         {MenuItems.map((item, index) => {
           return (
