@@ -10,7 +10,7 @@ export const NavbarPosts = () => {
   return (
     <nav className="navbarPosts">
       <div className="leftSectionNavbar">
-      <img className="navbar-logo" src={smallLogo} width={60} href={"http://localhost:3000/"}></img>
+      <img className="navbar-logo" src={smallLogo} width={60} ></img>
       <input className="searchInNavBar" type="text" placeholder="Search"></input>
       </div>
       <div className="rightSectionNavbar">

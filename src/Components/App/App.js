@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import MainLayout from '../Layouts/MainLayout/MainLayout'
 import ViewLayout from '../Layouts/PostLayout/PostLayout'
+import WriteLayout from '../Layouts/WriteLayout/WriteLayout'
 import Home from '../../Pages/Home/Home'
 import Write from "../../Pages/Post/create/Write";
 import PostView from "../../Pages/Post/View/view";
@@ -20,7 +21,7 @@ function App(){
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />}/>
           </Route>
-          <Route path="/write" element={<MainLayout />}>
+          <Route path="/write" element={<WriteLayout />}>
             <Route index element={<Write />}/>
           </Route>
           <Route path="/post" element={<ViewLayout />}>

@@ -1,10 +1,4 @@
 
-
-.discoverContainer{
-    // border-bottom: 1px solid rgb(242,242,242);
-    // margin-bottom: 25px;
-}
-
 .DiscoverTitle{
     margin-top: 30px;
     padding-bottom: 15px;
@@ -27,23 +21,15 @@
 .moreTopicsDiscover{
     font-size: 14px;
     color: rgb(80,144,60);
-    padding: 30px 0px;
+    padding: 10px 0px;
+    margin-bottom: 5px;
 }
 
-.footerContainer{
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    background-color: hotpink;
-}
-
-.footer{
-    color:grey;
+.footerMain{
+    border-top: 1px solid rgb(242,242,242);
     font-size: 14px;
-    list-style: none;
-    float: left;
-    padding: 16px;
-    text-decoration: none;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
 }
-

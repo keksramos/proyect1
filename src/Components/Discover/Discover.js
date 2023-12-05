@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./discover.scss";
 import Footer from "../Footer/Footer";
+import { FooterItems } from "../Footer/FooterItems";
 
 export const Discover = () => {
 
@@ -48,8 +49,16 @@ export const Discover = () => {
         </div>
         <p className="moreTopicsDiscover">See more topics</p>
       </div>
-      <div>
-      <Footer />
+      <div className="footerMain">
+      {FooterItems.map((item, index) => {
+                return(
+                    <li key={index}>
+                        <a className={item.footerLink} href={item.url}>
+                            {item.title}
+                        </a>
+                    </li>
+                )
+            })}
       </div>
     </section>
   );
