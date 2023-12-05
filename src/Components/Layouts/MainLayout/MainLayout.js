@@ -18,7 +18,6 @@ export default function MainLayout() {
       const response = await fetch("http://localhost:5001/posts")
       const data = await response.json();
 
-      // console.log(data)
       setPosts(data)
     }
     fetchPosts()

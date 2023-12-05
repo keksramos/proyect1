@@ -12,34 +12,25 @@ export default function PostView(){
             const data = await response.json()
 
             //Convert date to dateString
-            // data.forEach ( async (post) => {
-            //     const date = new Date(post.creationDate);
-        
-            //     const month = date.getMonth();
-            //     const monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dic" ];
-        
-            //     const dateString = `${monthNames[month]}, ${date.getDate()}`;
-            //     post.creationDate = dateString;
-        
-            //     //Get comments count
-            //     // const comments = await fetchComments(post._id);
-            //   });
-        
+            
+            
               setPost(data);
               console.log(data)
-            };
+            }
             fetchPost();
           });
 
     return(
-        <div className="post">
+        <div className="postBuilder">
             {
                 post &&(
                     <>
-                        <h2>{post.title}</h2>
-                        <p>{post.creationDate} | {post.readTime}</p>
-                        <h3>{post.description}</h3>
-                        <p>Comments: {post.comments}</p>
+                        <img src={post.coverImage} className="topImageCover"></img>
+                        <h2 className="postTitleViewPost">{post.title}</h2>
+                        <p className="postDate">{post.creationDate} | {post.readTime}</p>
+                        <p className="postDescription">{post.description}</p>
+                        <p className="commentsTitle">Comments:</p>
+                        <p>{post.comments}</p>
                     </>
                 )
             }
