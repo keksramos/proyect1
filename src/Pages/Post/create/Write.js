@@ -1,6 +1,8 @@
 import React, { useState} from "react";
 import "./write.scss"
 
+//Write es PostCreate del video de la clase
+
 export default function Write(){
     const [valid, setValid] = useState({
         postID: false,

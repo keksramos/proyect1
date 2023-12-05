@@ -6,6 +6,8 @@ import ('./post.scss')
 function Post(props){
     const {_id, title, creationDate, description, coverImage, readTime, comments} = props;
 
+    // console.log(props)
+
     return <div className="postContainer">
         <section className="postTextContainer">
             {/* <p className="Author">{author}</p> */}

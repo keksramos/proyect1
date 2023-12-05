@@ -1,12 +1,12 @@
-import React, { createContext, useEffect, useState } from "react";
+import React from "react";
 
 import "./App.css";
 import MainLayout from '../Layouts/MainLayout/MainLayout'
-import WriteLayout from "../Layouts/WriteLayout/writeLayout";
-import PostLayout from "../Layouts/PostLayout/PostLayout";
+import ViewLayout from '../Layouts/PostLayout/PostLayout'
 import Home from '../../Pages/Home/Home'
-import Write from "../../Pages/Write/Write";
-import PostView from "../Post/View/view";
+import Write from "../../Pages/Post/create/Write";
+import PostView from "../../Pages/Post/View/view";
+
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -20,13 +20,13 @@ function App(){
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />}/>
           </Route>
-          <Route path="/write" element={<WriteLayout />}>
+          <Route path="/write" element={<MainLayout />}>
             <Route index element={<Write />}/>
           </Route>
-          <Route path="/view" element={<PostLayout />}>
-            <Route path=":id" element={<PostView/>}/>
-            <Route index element={<Write />}/>
+          <Route path="/post" element={<ViewLayout />}>
+            <Route path=":id" element={<PostView />}/>
           </Route>
+          
       </Routes>
     </BrowserRouter>
   )

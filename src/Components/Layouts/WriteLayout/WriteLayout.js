@@ -12,7 +12,6 @@ export default function WriteLayout() {
       <div className="mainContent">
         <Outlet />
       </div>
-      <Footer />
     </div>
   );
 }

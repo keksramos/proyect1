@@ -4,11 +4,12 @@ import { NavbarPosts } from "../../NavBar/NavbarPosts/navbarPosts";
 import Footer from "../../Footer/Footer";
 
 export default function ViewLayout(){
-    <div className="viewLayout">
-        <NavbarPosts />
-        <div className="viewContent">
-            <Outlet />
+    return(
+        <div className="postLayout">
+            <NavbarPosts />
+            <div className="viewLayout">
+                <Outlet />
+            </div>
         </div>
-        <Footer />
-    </div>
+    )
 }
