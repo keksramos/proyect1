@@ -2,65 +2,72 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+    background-color: #fefefe;
 
-.navbarPosts{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    border-bottom: 1px solid rgb(242,242,242);
-
-    .leftSectionNavbar{
+    .navbarPosts{
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        
-        .navbar-logo{
-            justify-self: start;
-            margin: 0px 20px;
-            cursor: pointer;
-        }
+        justify-content: space-between;
+        height: 50px;
+        border-bottom: 1px solid rgb(242,242,242);
     
-        .searchInNavBar{
-            background-color: rgb(242,242,242);
-            padding: 5px;
-            margin-left: 5px;
-            width: 180px;
-            border-radius: 15px;
-            border: none;
+        .leftSectionNavbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             
-            .searchText{
-                font-size: 15px;
-                color: grey;
+            .navbar-logo{
+                justify-self: start;
+                margin: 0px 20px;
+                cursor: pointer;
+            }
+        
+            .searchInNavBar{
+                background-color: rgb(242,242,242);
+                padding: 5px;
+                margin-left: 5px;
+                width: 180px;
+                border-radius: 15px;
+                border: none;
+                
+                .searchText{
+                    font-size: 15px;
+                    color: grey;
+                }
             }
         }
-    }
+    
+        .rightSectionNavbar{
+                    
+            .navbarPostButton{
+                border: none;
+                background-color: white;
+                margin: 0px 15px;
+                color: grey;
+                align-items: center;
+                cursor: pointer;
+            }
+        
+            .userButton{
+                height: 30px;
+                width: 30px;
+                padding: 7px;
+                margin: 0px 15px;
+                border-radius: 20px;
+                border: none;
+                background: black;
+                // color: #fefefe;
 
-    .rightSectionNavbar{
-                
-        .navbarPostButton{
-            border: none;
-            background-color: white;
-            margin: 0px 15px;
-            color: grey;
-            align-items: center;
-            cursor: pointer;
+                .userIcon{
+                    background: none;
+                    color:#fefefe;
+                }
+        
+            }
         }
     
-        .userButton{
-            height: 30px;
-            width: 30px;
-            padding: 7px;
-            margin: 0px 15px;
-            border-radius: 20px;
-            border: none;
-            background-color: black;
-            color: whitesmoke;
-    
-        }
+        
     }
-
-    
 }
+

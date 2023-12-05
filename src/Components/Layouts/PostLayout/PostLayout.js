@@ -10,6 +10,7 @@ export default function ViewLayout(){
             <div className="viewLayout">
                 <Outlet />
             </div>
+            <Footer />
         </div>
     )
 }

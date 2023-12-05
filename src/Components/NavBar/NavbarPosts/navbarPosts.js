@@ -16,7 +16,9 @@ export const NavbarPosts = () => {
       <div className="rightSectionNavbar">
         <button className="navbarPostButton" href={"/write"}> <FaPencilAlt size={15}/> Write</button>
         <button className="navbarPostButton"><FaRegBell size={15}/></button>
-        <button className="userButton"><FaUser size={15}/></button>
+        <button className="userButton">
+          <FaUser className="userIcon" size={15}/>
+          </button>
       </div>
 
     </nav>
